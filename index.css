@@ -1,18 +1,13 @@
-element.style {
-    height: 100%;
-}
-
 body {
   font-family: 'Open Sans';
-  font-size: 20px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  line-height: 1.2;
+  line-height: 1;
   font-weight: 400;
   font-style: normal;
+  font-stretch: normal;
   color: #333;
-  -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -21,7 +16,7 @@ p {
 }
 
 .bold-letters {
-  font-weight: 1200;
+  font-weight: 800;
   color: blue;
 }
 
@@ -29,10 +24,13 @@ div#text-container {
   max-width: 300px;
   width: 90%;
   margin: 0 auto;
-  border: 2px solid #474444;
+  margin-top:20px;
+  margin-bottom:20px;
+  border: 1px solid #474444;
   line-height: 1em;
   padding: 1em;
   box-sizing: border-box;
+  border-radius: 5px;
 }
 
 p.text {
@@ -52,3 +50,8 @@ textarea {
   padding: 1em;
 }
 
+button {
+  margin: auto;
+  margin-top: 10px;
+  display: block;
+}
