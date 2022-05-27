@@ -48,4 +48,3 @@ function bionicReading(text) {
   var arr = result.split(". ").join('. <br><br/>');
   return arr;
 }
-}
