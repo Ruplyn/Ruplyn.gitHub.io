@@ -41,6 +41,6 @@ function bionicReading(text) {
   });
 
   const arr2 = arr1.map((el) => el.join("")).join(" ");
-  const arr3 = arr2.split(".").join('. <br><br/>');
+  const arr3 = arr2.split(.*?(?:\.|!|\?)(?:(?= [A-Z0-9])|$)).join('. <br><br/>');
   return arr3;
 }
