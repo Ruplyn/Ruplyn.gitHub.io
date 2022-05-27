@@ -41,6 +41,7 @@ function bionicReading(text) {
   });
 
   const arr2 = arr1.map((el) => el.join("")).join(" ");
-  const arr3 = arr2.match(/[^\.!\?]+[\.!\?]+/g).join(' <br><br/>');
-  return arr3;
+  const arr3 = arr2.replace(/.*?(?:\.|!|\?)(?:(?= [A-Z0-9])|$)/gm, "$1$2|");
+  const arr4 = arr3.split(". ").join('. <br><br/>');
+  return arr4;
 }
