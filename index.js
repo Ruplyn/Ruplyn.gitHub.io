@@ -41,7 +41,11 @@ function bionicReading(text) {
   });
 
   const arr2 = arr1.map((el) => el.join("")).join(" ");
-  const arr3 = arr2.replace(/.*?(?:\.|!|\?)(?:(?= [A-Z0-9])|$)/gm, "$1$2|");
-  const arr4 = arr3.split(". ").join('. <br><br/>');
-  return arr4;
+  var re = /\b(\w\.\w\.)|([.?!])\s+(?=[A-Za-z])/g; 
+  var result = arr2.replace(re, function(m, g1, g2){
+    return g1 ? g1 : g2+"\r";
+    });
+  var arr = result.split(". ").join('. <br><br/>');
+  return arr;
+}
 }
