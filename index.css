@@ -7,7 +7,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
-  color: white;
+  color: black;
 }
 
 p {
@@ -17,7 +17,7 @@ p {
 
 bold-letters {
   font-weight: 800;
-  color: white;
+  color: blue;
 }
 
 div#text-container {
@@ -31,7 +31,6 @@ div#text-container {
   padding: 1em;
   box-sizing: border-box;
   border-radius: 5px;
-  background: #093145
 }
 
 p.text {
