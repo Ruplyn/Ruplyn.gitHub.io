@@ -15,7 +15,20 @@
         <div style="text-align:center;"></div>
             <button id="text-input">Click here to show the copied text</button>
         </div>
+        
+        <button onclick="myFunction()">Toggle dark mode</button>
+
+        <script>
+        function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        }
+        </script>
+
         <div id="text-container"></div>
         <script src="index.js"></script>
+
+      
+
     </body>
 </html> 
