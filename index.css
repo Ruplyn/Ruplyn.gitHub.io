@@ -1,18 +1,11 @@
 body {
-  font-family: 'Open Sans';
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  line-height: 1;
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 .dark-mode {
   background-color: rgba(27, 26, 26, 0.911);
-  color: white;
+  color: rgba(255, 255, 255, 0.555);
 }
 
 p {
@@ -21,9 +14,10 @@ p {
 }
 
 .bold-letters {
-  font-weight: bold;
+  font-weight: 710;
   color: rgb(44, 204, 116);
 }
+
 div#text-container {
   max-width: 300px;
   width: 90%;
