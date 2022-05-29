@@ -1,12 +1,11 @@
-
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter',Helvetica,Arial,Lucida,sans-serif;
   font-size: 16px;
-  color: black;
+  color: #3a3a3c;
 }
 
 .dark-mode {
-  background-color: rgba(27, 26, 26, 0.582);
+  background-color: #f2f2f7;
   color: rgba(27, 26, 26, 0.781);
 }
 
@@ -17,7 +16,7 @@ p {
 
 .bold-letters {
   font-weight: 710;
-  color: black;
+  color: #3a3a3c;
 }
 
 div#text-container {
