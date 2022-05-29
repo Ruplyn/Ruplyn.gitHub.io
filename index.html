@@ -8,24 +8,49 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans,wght@400&display=swap" rel="stylesheet">
         <title>Read Copied text from the Clipboard </title>
-        <link rel="stylesheet" href="index.css" />     
+        <link rel="stylesheet" href="index.css" />
+        
+        <style>       
+            .navbar {
+              overflow: hidden;
+              background-color: #3a3a3c;
+              position: fixed; /* Set the navbar to fixed position */
+              top: 0; /* Position the navbar at the top of the page */
+              width: 100%; /* Full width */
+            }
+            
+            .navbar a {
+              float: left;
+              font-size: 16px;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            .dropdown {
+              float: left;
+              overflow: hidden;
+            }
+            </style>
     </head>
     <body>
-        <!-- Paragraph tag -->
-     
-        <!-- Button -->
-        <div style="text-align:center;"></div>
+
+        <div class="navbar">
+            <div style="text-align:center;"></div>
             <button id="text-input" style="color:black">Click here to show the copied text</button>
-        </div>
-        
-        <button onclick="myFunction()" style="color:black">Toggle dark mode</button>
+            </div>
+        </div> 
+
+        <!-- button onclick="myFunction()" style="color:black">Toggle dark mode</button>
 
         <script>
         function myFunction() {
         var element = document.body;
         element.classList.toggle("dark-mode");
         }
-        </script>
+
+        </script> -->
 
         <div id="text-container"></div>
         <script src="index.js"></script>
