@@ -38,7 +38,7 @@
 
         <div class="navbar">
             <div style="text-align:center;"></div>
-            <button id="text-input" style="color:black">Click here to show the copied text</button>
+            <button onclick="topFunction()" id="text-input" style="color:black">Click here to show the copied text</button>
             </div>
         </div> 
 
@@ -51,6 +51,13 @@
         }
 
         </script> -->
+        <script>
+          function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+          } 
+        </script>
+    
 
         <div id="text-container"></div>
         <script src="index.js"></script>
