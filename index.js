@@ -45,6 +45,6 @@ function bionicReading(text) {
   var result = arr2.replace(re, function(m, g1, g2){
     return g1 ? g1 : g2+"\r";
     });
-  var arr = result.split(". ").join('. <br><br/>');
+  var arr = result.split(".").join('. <br><br/>');
   return arr;
 }
