@@ -1,5 +1,5 @@
 body {
-  font-family: Helvetica,sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   color: #3a3a3c;
   background-color: #f2f2f7;
@@ -31,6 +31,7 @@ div#text-container {
   padding: 1em;
   box-sizing: border-box;
   border-radius: 5px;
+  text-align: center;
 }
 
 p.text {
