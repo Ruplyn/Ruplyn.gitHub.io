@@ -16,9 +16,11 @@ p {
 }
 
 .bold-letters {
-  /*font-weight: 710; */
-  /*color: #f2f2f7;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+  font-weight: 710; 
+  color: blue;
+  
+  /*
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   color: #3a3a3c;
   text-shadow: 
     -1px -1px 0 blue,
@@ -28,7 +30,7 @@ p {
      1px  1px 0 blue,
      0    1px 0 blue,
     -1px  1px 0 blue,
-    -1px  0   0 blue;
+    -1px  0   0 blue; */
 }
 
 div#text-container {
