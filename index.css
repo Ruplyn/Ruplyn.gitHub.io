@@ -7,7 +7,7 @@ body {
   font-variant: normal;
   line-height: 23px;
   font-weight: 400;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .dark-mode {
@@ -25,7 +25,7 @@ p {
   color: black;
   font-style: italic;
   font-variant: normal;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   
   
   /*
