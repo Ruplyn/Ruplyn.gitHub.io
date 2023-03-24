@@ -1,13 +1,13 @@
 body {
   font-family: Georgia;
-  font-size: 20px;
+  font-size: 25px;
   color: #3a3a3c;
   background-color: #f2f2f7;
   font-style: normal;
   font-variant: normal;
   line-height: 23px;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .dark-mode {
@@ -25,7 +25,7 @@ p {
   color: black;
   font-style: normal;
   font-variant: normal;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   
   
   /*
