@@ -30,7 +30,7 @@ function bionicReading(text) {
           notBold.push(el[i]);
         }
        }
-      }
+    }
 
     const formattedWord = [];
 
