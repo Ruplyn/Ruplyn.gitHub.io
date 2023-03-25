@@ -19,25 +19,27 @@ function bionicReading(text) {
 
   const arr1 = letterArr.map((el) => {
     const length = el.length;
-    const boldLen = Math.floor((length / 100) * 40);
-    let boldLetters = [];
-    let notBold = [];
-    for (let i = 0; i < el.length; i++) {
-      if (i <= boldLen) {
-        boldLetters.push(el[i]);
-      } else {
-        notBold.push(el[i]);
+    if (length > 4) {
+      const boldLen = Math.floor((length / 100) * 40);
+      let boldLetters = [];
+      let notBold = [];
+      for (let i = 0; i < el.length; i++) {
+        if (i <= boldLen) {
+          boldLetters.push(el[i]);
+        } else {
+          notBold.push(el[i]);
+        }
       }
+
+      const formattedWord = [];
+
+      formattedWord.push(
+        `<span class="bold-letters">${boldLetters.join("")}</span>`
+      );
+      formattedWord.push(`${notBold.join("")}`);
+
+      return formattedWord;
     }
-
-    const formattedWord = [];
-
-    formattedWord.push(
-      `<span class="bold-letters">${boldLetters.join("")}</span>`
-    );
-    formattedWord.push(`${notBold.join("")}`);
-
-    return formattedWord;
   });
 
   const arr2 = arr1.map((el) => el.join("")).join(" ");
