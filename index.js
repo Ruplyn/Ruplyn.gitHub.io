@@ -30,16 +30,16 @@ function bionicReading(text) {
           notBold.push(el[i]);
         }
       }
-
-      const formattedWord = [];
-
-      formattedWord.push(
-        `<span class="bold-letters">${boldLetters.join("")}</span>`
-      );
-      formattedWord.push(`${notBold.join("")}`);
-
-      return formattedWord;
     }
+
+    const formattedWord = [];
+
+    formattedWord.push(
+      `<span class="bold-letters">${boldLetters.join("")}</span>`
+    );
+    formattedWord.push(`${notBold.join("")}`);
+
+    return formattedWord;
   });
 
   const arr2 = arr1.map((el) => el.join("")).join(" ");
