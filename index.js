@@ -17,7 +17,7 @@ function bionicReading(text) {
   const paragraph = wordArrayx.join(".\n");
   const wordArray = paragraph.split(". ");
 
-  let letterArr = wordArray.map((el) => el.split(" "));
+  const letterArr = wordArray.map((el) => el.split(" "));
 
   const arr1 = letterArr.map((el) => {
     const length = el.length;
