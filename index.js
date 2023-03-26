@@ -23,7 +23,7 @@ function bionicReading(text) {
     let boldLetters = [];
     let notBold = [];
     for (let i = 0; i < el.length; i++) {
-      if (boldLen >= 2) {
+      if (length >= 2) {
         if (i <= boldLen) {
           boldLetters.push(el[i]);
         } else {
