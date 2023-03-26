@@ -13,10 +13,7 @@ button.addEventListener("click", () => {
 });
 
 function bionicReading(text) {
-  const textjoin = text.join(" ")
-  const sensplit = textjoin.split(". ");
-  const wordArray = sensplit.split(" ");
-
+  const wordArray = text.split(" ");
   const letterArr = wordArray.map((el) => el.split(""));
 
   const arr1 = letterArr.map((el) => {
