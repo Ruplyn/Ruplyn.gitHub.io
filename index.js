@@ -13,7 +13,11 @@ button.addEventListener("click", () => {
 });
 
 function bionicReading(text) {
-  const wordArray = text.split(" ");
+  const wordArrayx1 = text.split(/(?<!\d\.\d)\.(\s|$)/g);
+  const wordArrayx = wordArrayx1.filter((sentence) => sentence.trim() !== '')
+  const paragraph = wordArrayx.join(".\n");
+  const wordArray = paragraph.split(" ");
+  
   const letterArr = wordArray.map((el) => el.split(""));
 
   const arr1 = letterArr.map((el) => {
@@ -48,6 +52,9 @@ function bionicReading(text) {
     return g1 ? g1 : g2+"\r";
     });
   var arr11 = result.replace(/\.(?=[^()]*\))/g, ' ');
-  var arr21 = arr11.replace(/(\.\s+)/g,"\$1<br /><br />");
+  var arr210 = arr11.replace(/(\.\s+)/g,"\$1<br /><br />");
+  var arr21x = arr210.replace(/\n\n/g, '<br>')
+  const arr22 = arr21x.split(".");
+  const arr21 = arr22.join(".\n");
   return arr21;
 }
