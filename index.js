@@ -23,13 +23,13 @@ function bionicReading(text) {
     let boldLetters = [];
     let notBold = [];
     for (let i = 0; i < el.length; i++) {
-      if (length > 4) {
+      if (boldLen > 3) {
         if (i <= boldLen) {
           boldLetters.push(el[i]);
         }
       } else {
         notBold.push(el[i]);
-        }
+      }
     }
     const formattedWord = [];
 
