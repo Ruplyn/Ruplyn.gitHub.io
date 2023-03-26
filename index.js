@@ -26,9 +26,9 @@ function bionicReading(text) {
       if (boldLen > 3) {
         if (i <= boldLen) {
           boldLetters.push(el[i]);
-        }
-      } else {
+        } else {
         notBold.push(el[i]);
+        }
       }
     }
     const formattedWord = [];
