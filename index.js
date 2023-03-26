@@ -13,9 +13,9 @@ button.addEventListener("click", () => {
 });
 
 function bionicReading(text) {
-  let wordArrayx = text.split(".");
-  let paragraph = wordArrayx.join(".\n");
-  let wordArray = paragraph.split(". ");
+  const wordArrayx = text.split(". ");
+  const paragraph = wordArrayx.join(".\n");
+  const wordArray = paragraph.split(". ");
 
   let letterArr = wordArray.map((el) => el.split(" "));
 
