@@ -20,7 +20,7 @@ function bionicReading(text) {
   for (let i = 0; i < words.length; i++) {
     if ((i + 1) % 3 === 0) {
         output += words[i] + " &middot ";
-        //output += words[i] + " ~ ";
+        //output += words[i] + " ^ ";
     } else {
         output += words[i] + " ";
     }
