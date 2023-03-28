@@ -1,5 +1,5 @@
 body {
-  font-family: Garamond;
+  font-family: Quicksand;
   font-size: 20px;
   color: #3a3a3c;
   background-color: #f2f2f7;
@@ -43,7 +43,7 @@ p {
 }
 
 div#text-container {
-  max-width: 300px;
+  max-width: 600px;
   width: 90%;
   margin: 0 auto;
   margin-top:60px;
