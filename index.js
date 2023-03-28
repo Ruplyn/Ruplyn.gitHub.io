@@ -13,19 +13,26 @@ button.addEventListener("click", () => {
 });
 
 function bionicReading(text) {
-  const arr2 = text.split('.').join('.<br><br/>');
-  const words = arr2.split(" ");
-  let output = "";
+  const sentences = text.split('. ');
 
-  for (let i = 0; i < words.length; i++) {
-    if ((i + 1) % 3 === 0) {
-        output += words[i] + " &middot ";
-        //output += words[i] + " ^ ";
-    } else {
-        output += words[i] + " ";
+  for (let i = 0; i < sentences.length; i++) {
+    const words = sentences[i].split(' ');
+    const newWords = [];
+  
+    for (let j = 0; j < words.length; j++) {
+      newWords.push(words[j]);
+  
+      if ((j + 1) % 3 === 0) {
+        newWords.push('<span style="color:red;">_</span>');
+      }
     }
+  
+    const newSentence = newWords.join(' ');
+    sentences[i] = newSentence;
   }
+  
+  const output = sentences.join('. ');
 
-  //const arr3 = output.split('.').join('. <br><br/>');
-  return output;
+  const arr3 = output.split('.').join('. <br><br/>');
+  return arr3;
 }
