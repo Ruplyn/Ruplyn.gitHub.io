@@ -1,60 +1,30 @@
 const textContainer = document.getElementById("text-container");
-const button = document.getElementById("text-input");
+const textInput = document.getElementById("text-input");
 
 let text =
   "Pushing to the stack is faster than allocating on the heap because the allocator never has to search for a place to store new data; that location is always at the top of the stack. Comparatively, allocating space on the heap requires more work, because the allocator must first find a big enough space to hold the data and then perform bookkeeping to prepare for the next allocation.";
 
-button.addEventListener("click", () => {
-    navigator.clipboard.readText().then(function (textFromClipboard) {
-        text = textFromClipboard;
-        const bionicText = `<p class="text">${bionicReading(text)}</p>`;
-        textContainer.innerHTML = bionicText;
-        });
+textInput.addEventListener("keyup", function (event) {
+  text = event.target.value;
+  text = text.trim();
+  bionicReading(text);
+  const bionicText = `<p class="text">${bionicReading(text)}</p>`;
+  textContainer.innerHTML = bionicText;
 });
 
 function bionicReading(text) {
-  const wordArrayx1 = text.split(/(?<!\d\.\d)\.(\s|$)/g);
-  const wordArrayx = wordArrayx1.filter((sentence) => sentence.trim() !== '')
-  const paragraph = wordArrayx.join(".\n");
-  const wordArray = paragraph.split(" ");
-  
-  const letterArr = wordArray.map((el) => el.split(""));
+  const arr2 = text.split('. ').join('.<br><br/>');
+  const words = arr2.split(" ");
+  let output = "";
 
-  const arr1 = letterArr.map((el) => {
-    const length = el.length;
-    const boldLen = Math.floor((length / 100) * 40);
-    let boldLetters = [];
-    let notBold = [];
-    for (let i = 0; i < el.length; i++) {
-      if (length >= 6) {
-        if (boldLen != 0) {
-          boldLetters.push(el[i]);
-        } else {
-          notBold.push(el[i]);
-        }
-      } else {
-        notBold.push(el[i]);
-      }
+  for (let i = 0; i < words.length; i++) {
+    if ((i + 1) % 3 === 0) {
+        output += words[i] + " &middot ";
+    } else {
+        output += words[i] + " ";
     }
-    const formattedWord = [];
+  }
 
-    formattedWord.push(
-      `<span class="bold-letters">${boldLetters.join("")}</span>`
-    );
-    formattedWord.push(`${notBold.join("")}`);
-
-    return formattedWord;
-  });
-
-  const arr2 = arr1.map((el) => el.join("")).join(" ");
-  var re = /\b(\w\.\w\.)|([.?!])\s+(?=[A-Za-z])/g; 
-  var result = arr2.replace(re, function(m, g1, g2){
-    return g1 ? g1 : g2+"\r";
-    });
-  var arr11 = result.replace(/\.(?=[^()]*\))/g, ' ');
-  var arr210 = arr11.replace(/(\.\s+)/g,"\$1<br /><br />");
-  var arr21x = arr210.replace(/\n\n/g, '<br>')
-  const arr22 = arr21x.split(".");
-  const arr21 = arr22.join(".\n");
-  return arr21;
+  //const arr3 = output.split('.').join('. <br><br/>');
+  return output;
 }
