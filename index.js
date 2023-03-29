@@ -23,7 +23,7 @@ function bionicReading(text) {
       newWords.push(words[j]);
   
       if ((j + 1) % 3 === 0) {
-        newWords.push('<span style="color:red;"> | </span>');
+        newWords.push('<span style="color:red;">-</span>');
       }
     }
   
