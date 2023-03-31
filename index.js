@@ -17,7 +17,6 @@ function bionicReading(text) {
 
   for (let i = 0; i < sentences.length; i++) {
     const words = sentences[i].split(' ');
-    const newWords = [];
   
     for (let j = 0; j < words.length; j += 3) {
       if (j % 6 === 0) {
@@ -27,7 +26,7 @@ function bionicReading(text) {
       }
     }
   
-    const newSentence = newWords.join(' ');
+    const newSentence = words.join(' ');
     sentences[i] = newSentence;
   }
   
