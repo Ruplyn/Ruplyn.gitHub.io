@@ -53,7 +53,7 @@ div#text-container {
   padding: 1em;
   box-sizing: border-box;
   border-radius: 5px;
-  text-align: center;
+  text-align: justify;
 }
 
 p.text {
