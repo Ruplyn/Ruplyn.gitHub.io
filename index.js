@@ -19,11 +19,11 @@ function bionicReading(text) {
     const words = sentences[i].split(' ');
     const newWords = [];
   
-    for (let j = 0; j < words.length; j++) {
-      newWords.push(words[j]);
-  
-      if ((j + 1) % 3 === 0) {
-        newWords.push('<span style="color:red;">-</span>');
+    for (let j = 0; j < words.length; j += 3) {
+      if (j % 6 === 0) {
+        words[j] = "<strong>" + words[j] + "</strong>";
+      } else if ((j - 3) % 6 === 0) {
+        words[j] = "<strong>" + words[j] + "</strong>";
       }
     }
   
