@@ -80,3 +80,8 @@ button {
   display: block;
   font-size: 20px;
 }
+
+strong {
+  font-weight: bold;
+  color: blue;
+}
