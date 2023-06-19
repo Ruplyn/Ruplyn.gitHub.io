@@ -1,13 +1,13 @@
 body {
-  font-family: Verdana;
+  font-family: Georgia;
   font-size: 25px;
-  color: #3a3a3c;
+  color: grey;
   background-color: #f2f2f7;
   font-style: normal;
   font-variant: normal;
-  line-height: 10px;
-  font-weight: 150;
-  letter-spacing: 0.5px;
+  line-height: 25px;
+  font-weight: 200;
+  letter-spacing: 1px;
 }
 
 .dark-mode {
