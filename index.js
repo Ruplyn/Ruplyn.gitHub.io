@@ -13,25 +13,42 @@ button.addEventListener("click", () => {
 });
 
 function bionicReading(text) {
-  const sentences = text.split('. ');
+  const wordArray = text.split(" ");
 
-  for (let i = 0; i < sentences.length; i++) {
-    const words = sentences[i].split(' ');
-  
-    for (let j = 0; j < words.length; j += 3) {
-      if (j % 6 === 0) {
-        words[j] = "<strong>" + words[j] + "</strong>";
-      } else if ((j - 3) % 6 === 0) {
-        words[j] = "<strong>" + words[j] + "</strong>";
+  const letterArr = wordArray.map((el) => el.split(""));
+
+  const arr1 = letterArr.map((el) => {
+    const length = el.length;
+    const boldLen = Math.floor((length / 100) * 30);
+    let boldLetters = [];
+    let notBold = [];
+    for (let i = 0; i < el.length; i++) {
+      if (length >= 2) {
+        if (i <= boldLen) {
+          boldLetters.push(el[i]);
+        } else {
+          notBold.push(el[i]);
+        }
+      } else {
+        notBold.push(el[i]);
       }
     }
-  
-    const newSentence = words.join(' ');
-    sentences[i] = newSentence;
-  }
-  
-  const output = sentences.join('. ');
+    const formattedWord = [];
 
-  const arr3 = output.split('.').join('. <br><br/>');
-  return arr3;
+    formattedWord.push(
+      `<span class="bold-letters">${boldLetters.join("")}</span>`
+    );
+    formattedWord.push(`${notBold.join("")}`);
+
+    return formattedWord;
+  });
+
+  const arr2 = arr1.map((el) => el.join("")).join(" ");
+  var re = /\b(\w\.\w\.)|([.?!])\s+(?=[A-Za-z])/g; 
+  var result = arr2.replace(re, function(m, g1, g2){
+    return g1 ? g1 : g2+"\r";
+    });
+  var arr11 = result.replace(/\.(?=[^()]*\))/g, ' ');
+  var arr21 = arr11.replace(/(\.\s+)/g,"\$1<br /><br />");
+  return arr21;
 }
