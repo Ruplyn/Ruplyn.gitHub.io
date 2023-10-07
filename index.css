@@ -1,6 +1,6 @@
 body {
   font-family: Georgia;
-  font-size: 25px;
+  font-size: 15px;
   color: grey;
   background-color: #f2f2f7;
   font-style: normal;
@@ -22,7 +22,7 @@ p {
 
 .bold-letters {
   font-weight: 710; 
-  color: black;
+  color: blue;
   font-style: normal;
   font-variant: normal;
   letter-spacing: 0.5px;
