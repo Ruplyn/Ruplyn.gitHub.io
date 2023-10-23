@@ -1,13 +1,13 @@
 body {
   font-family: Futura;
-  font-size: 16px;
-  color: #008080;
+  font-size: 24px;
+  color: teal;
   background-color: #f2f2f7;
   font-style: normal;
   font-variant: normal;
-  line-height: 18px;
+  line-height: 28px;
   font-weight: 300;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
 }
 
 .dark-mode {
@@ -22,7 +22,7 @@ p {
 
 .bold-letters {
   font-weight: 710; 
-  color: #008080;
+  color: teal;
   font-style: normal;
   font-variant: normal;
   letter-spacing: 0.5px;
