@@ -1,7 +1,7 @@
 body {
   font-family: Futura;
   font-size: 24px;
-  color: teal;
+  color: black;
   background-color: #f2f2f7;
   font-style: normal;
   font-variant: normal;
@@ -22,7 +22,7 @@ p {
 
 .bold-letters {
   font-weight: 710; 
-  color: teal;
+  color: black;
   font-style: normal;
   font-variant: normal;
   letter-spacing: 0.5px;
