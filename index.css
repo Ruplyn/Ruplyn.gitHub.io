@@ -1,5 +1,5 @@
 body {
-  font-family: 'Jost';
+  font-family: Ubuntu;
   font-size: 24px;
   color: #141414;
   background-color: #f2f2f7;
@@ -7,7 +7,7 @@ body {
   font-variant: normal;
   line-height: 20px;
   font-weight: 300;
-  letter-spacing: 0.8px;
+  letter-spacing: 1px;
 }
 
 .dark-mode {
@@ -21,11 +21,11 @@ p {
 }
 
 .bold-letters {
-  font-weight: 710; 
+  font-weight: 600; 
   color: #141414;
   font-style: normal;
   font-variant: normal;
-  letter-spacing: 0.8px;
+  letter-spacing: 1px;
   
   
   /*
