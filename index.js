@@ -19,7 +19,7 @@ function bionicReading(text) {
 
   const arr1 = letterArr.map((el) => {
     const length = el.length;
-    const boldLen = Math.floor((length / 100) * 40);
+    const boldLen = Math.floor((length / 100) * 30);
     let boldLetters = [];
     let notBold = [];
     for (let i = 0; i < el.length; i++) {
