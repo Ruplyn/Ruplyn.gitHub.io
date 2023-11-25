@@ -1,12 +1,12 @@
 body {
-  font-family: Ubuntu;
+  font-family: 'Jost';
   font-size: 24px;
-  color: black;
+  color: #141414;
   background-color: #f2f2f7;
   font-style: normal;
   font-variant: normal;
   line-height: 20px;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 0.8px;
 }
 
@@ -22,7 +22,7 @@ p {
 
 .bold-letters {
   font-weight: 710; 
-  color: black;
+  color: #141414;
   font-style: normal;
   font-variant: normal;
   letter-spacing: 0.8px;
