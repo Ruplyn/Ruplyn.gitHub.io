@@ -1,7 +1,7 @@
 body {
   font-family: Ubuntu;
   font-size: 24px;
-  color: #141414;
+  color: grey;
   background-color: #f2f2f7;
   font-style: normal;
   font-variant: normal;
@@ -23,6 +23,7 @@ p {
 .bold-letters {
   font-weight: 600; 
   color: #141414;
+  font-size: 28px;
   font-style: normal;
   font-variant: normal;
   letter-spacing: 0.8px;
